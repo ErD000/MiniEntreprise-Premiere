@@ -1,0 +1,762 @@
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	
+}
+
+
+
+section{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+section:nth-child(odd){
+	background: #181818;
+}
+#sec2,#sec3,#sec5 {
+	background: #b6aad0;
+}
+ul{
+	width: 100%;
+	background: #000;
+	height: 50px;
+	margin:0;
+	padding: 0;
+	top: 0;
+	letter-spacing: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	animation: drop 2s ease;
+}
+ul li{
+	list-style: none;
+}
+ul li a{
+	color: #fff;
+	line-height: 50px;
+	box-sizing: border-box;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+ul li a:hover{
+	color: #b6aad0;
+	
+}
+.sec1{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url("img/");
+	background-position: center;
+	background-size: cover;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+	width: 100%;
+	margin:0;
+	padding: 0;
+	top: 0;	
+	animation: drop 1s ease;
+}
+.sec1 .logo img{
+	margin-left: px;
+
+}
+.sec1 .text-info{
+	margin-left: 10vh;
+}
+.sec1 .text-info h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 48px;
+	text-align: center;
+}
+.sec1 .text-info p{
+	font-family: 'Caveat', cursive;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 20px;
+}
+/*====== Sec1 Buttons =================================*/
+.button{
+	text-align: center;
+
+}
+.button button{
+	width: 200px;
+	height: 50px;
+	background: #b6aad0;
+	outline: none;
+	border:none;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 50px 5px 0 5px;
+	transition: 0.3s;
+}
+.button button:hover{
+	background: transparent;
+	border: 3px solid #b6aad0;
+}
+.button button a{
+	font-size: 30px;
+	font-family: 'Permanent Marker', cursive;
+	text-decoration: none;
+	color: #181818;
+}
+
+/*======================== Explorer ========================*/
+/*slider */
+#sec2{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	
+}
+#sec2 h1{
+	position: absolute;
+	top:7%;
+	
+	z-index: 10;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 48px;
+	
+}
+#sec2 p{
+	position: absolute;
+	top:17%;
+	margin-bottom: 10px;
+	z-index: 10;
+	font-family: 'Caveat', cursive;
+	font-size: 25px;
+	
+}
+.sliderContainer{
+	 width: 800px;
+	 margin: auto;
+	 border: 5px solid #000;
+	 overflow: hidden;
+	 position: relative;
+	 border-radius: 10px;
+	 margin-top: 200px;
+}
+.sliderImage{
+	display: flex;
+	width: 800px;
+	height: 500px;
+}
+#prevBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	left: 5%;
+	font-size: 50px;
+	color: #ff4d73;
+	opacity: .7;
+	cursor: pointer;
+}
+#nextBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	right: 5%;
+	font-size: 50px;
+	color: #ff4d73;
+	opacity: .7;
+	cursor: pointer;
+}
+#prevBtn:hover, #nextBtn:hover{
+	opacity: 0.5;
+}
+/* ==============================QUE POUVER-VOUS TROUVER CHEZ NOUS? ===================*/
+.text-Expolorer h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 48px;
+	margin-right: 70px;
+	margin-bottom: 50px;
+}
+.text-Expolorer p{
+	margin-right: 70px;
+	text-align: center;
+	font-family: 'Caveat', cursive;
+	font-size: 28px;
+}
+
+.imageExplorer img{
+	box-shadow: 15px 30px 0 0 #be93d4;
+	border-radius: 10px;
+	border:5px solid #181818 ;
+	height: 400px;
+	width: 400px;
+}
+.text-Expolorer span{
+	border-bottom: 1px solid black;
+	font-family: 'Caveat', cursive;
+}
+
+/*============================= Services ==================== */
+#sec3{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.containerService .Servicesline{
+	display: flex;
+
+}
+
+.containerService{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.containerService .titleservice h1{
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 45px;
+}
+.Servicesline .service1 .icon{
+	font-size: 30px;
+	margin: 20px auto;
+	padding: 18px;
+	height: 70px;
+	width: 70px;
+	border: 3px solid #ff4d73;
+	border-radius: 50%; 
+}
+.Servicesline .service2 .icon{
+	font-size: 30px;
+	margin: 20px auto;
+	padding: 18px;
+	height: 70px;
+	width: 70px;
+	border: 3px solid #ff4d73;
+	border-radius: 50%; 
+}
+.Servicesline .service3 .icon{
+	font-size: 30px;
+	margin: 20px auto;
+	padding: 18px;
+	height: 70px;
+	width: 70px;
+	border: 3px solid #ff4d73;
+	border-radius: 50%; 
+}
+
+.fa-paint-brush{
+	color: #fff;
+	margin:  20px 0px 20px 20px ;
+}
+.fa-upload{
+	color: #fff;
+	margin:  20px 0px 20px 20px ;
+}
+.fa-info-circle{
+	color: #fff;
+	margin:  20px 0px 20px 20px ;
+}
+.Servicesline .service1:hover .icon,
+.Servicesline .service2:hover .icon,
+.Servicesline .service3:hover .icon{
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+.containerService .Servicesline .service1,
+.containerService .Servicesline .service2,
+.containerService .Servicesline .service3{
+	height: 400px;
+	width: 350px;
+	background: #181818;
+	margin: 0 30px 0 30px;
+	border: 5px solid #fff;
+	border-radius: 10px;
+	box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+}
+.containerService .Servicesline .service1:hover,
+.containerService .Servicesline .service2:hover,
+.containerService .Servicesline .service3:hover{
+	background: #ff4d73;
+	cursor: pointer;
+	color: #222222;
+	box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+	transition: .5s;
+}
+.containerService .Servicesline .service1 .textinfoservice h2,
+.containerService .Servicesline .service2 .textinfoservice h2,
+.containerService .Servicesline .service3 .textinfoservice h2{
+	font-family: 'Permanent Marker', cursive;
+	color: #fff;
+	text-align: center;
+	margin-top: 10px;
+	letter-spacing: 1px;
+
+}
+.containerService .Servicesline .service1 .productinfo{
+	
+
+}
+
+.containerService .Servicesline .service1 .productinfo a,
+.containerService .Servicesline .service2 .productinfo a,
+.containerService .Servicesline .service3 .productinfo a{
+	color: #222222;
+	text-decoration: none;
+	position: absolute;
+	margin: 30px 0  0 77px;
+	border-radius: 10px;
+	background: #fff;
+	padding: 20px 40px 20px 40px;
+	transition: .5s;
+}
+
+.containerService .Servicesline .service1 .productinfo a:hover,
+.containerService .Servicesline .service2 .productinfo a:hover,
+.containerService .Servicesline .service3 .productinfo a:hover{
+	color: #ff4d73;
+	box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+	background: #222222;
+}
+
+/*============================= A propos ==================== */
+#sec4{
+	
+}
+.APropos{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.APropos .ImgApropos img{
+	box-shadow: 15px 30px 0 0 #be93d4;
+	border-radius: 10px;
+	border:5px solid #181818;
+	margin-left: 50px;
+	height: 500px;
+	width: 400px;
+}
+.APropos .textAPropos{
+	margin-left: 50px;
+}
+.APropos .textAPropos h1{
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+.APropos .textAPropos p{
+	margin-right: 70px;
+	text-align: center;
+	font-family: 'Caveat', cursive;
+	font-size: 28px;
+}
+
+/* ========== Footer */
+#sec6{
+	background-image: url("img/fondgauche.png");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
+}
+.contentFooter{
+	height: 95vh;
+	float: right;
+	align-items: center;
+	justify-content: center;
+
+}
+.boxcontact{
+	height: 80vh;
+	width: 120vh;
+	border: 1px solid #;
+	float: right;
+	margin-top: 17vh;
+	margin-left: 60vh;
+}
+.instagram .reseau ,
+.Twitterr .reseau ,
+.E-mail .reseau {
+	text-decoration: none;
+	padding: 30px;
+	background: #222222;
+	border-radius: 20px;
+	color: #fff;
+	transition: .5s;
+}
+.instagram .reseau:hover ,
+.Twitterr .reseau:hover ,
+.E-mail .reseau:hover{
+	background: #ff4d73;
+} 
+.boxcontact .instagram{
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 10vh;
+}
+.boxcontact .Twitterr{
+	display: flex;
+	align-items: center;
+	margin: 15vh 0 0 30vh;
+	
+}
+.boxcontact .E-mail{
+	display: flex;
+	align-items: center;
+	margin: 15vh 0 0 50vh;
+	
+}
+
+
+.instagram .fa-instagram{
+	font-size: 100px;
+	margin-left: 30px;
+	background: #d6249f;
+	padding: 0px 5px 0px 5px;
+	box-shadow: 30px 300px 100px  rgba(0,0,0,.25);
+	border-radius: 30px;
+	color: #fff;
+	 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	 cursor: pointer;
+	 transition: .5s;
+}
+.instagram .fa-instagram:hover{
+	color: #181818;
+	background: transparent;
+	transform: rotateZ(10deg);
+}
+.Twitterr .fa-twitter{
+	font-size: 100px;
+	margin-left: 30px;
+	color: #00acee;
+	transition: 0.5s;
+}
+.Twitterr .fa-twitter:hover{
+	color: #181818;
+	transform: rotateZ(10deg);
+}
+.E-mail .fa-envelope-o{
+	font-size: 100px;
+	margin-left: 30px;
+	color: #b80f0a;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.E-mail .fa-envelope-o:hover{
+	color: #181818;
+	transform: rotateZ(10deg);
+}
+.allrights{
+height: 5vh;
+background: #222222; 
+width: 100%;
+color: #fff;
+align-items: center;
+justify-content: center;
+display: flex;
+margin-bottom: 0;
+}
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@media screen and (max-width: 1024px){
+	/*ul*/
+	ul{
+	width: 100%;
+	background: #000;
+	height: 100px;
+	margin:0;
+	padding: 0;
+	top: 0;
+	letter-spacing: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	animation: drop 2s ease;
+	}
+	ul li{
+	list-style: none;
+	}
+	ul li a{
+	color: #fff;
+	font-size: 30px;
+	line-height: 50px;
+	box-sizing: border-box;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	}
+	/*home page */
+	#sec1{
+		display: flex;
+		flex-direction: column;
+		height: 120vh;
+	}
+	.sec1 .text-info{
+	margin-left: 0vh;
+	}
+	.sec1 .text-info h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 90px;
+	text-align: center;
+	margin-top: 10vh;
+	}
+	.sec1 .text-info p{
+	font-family: 'Caveat', cursive;
+	font-size: 60px;
+	text-align: center;
+	margin-top: 40px;
+	}
+	.button button{
+	width: 350px;
+	height: 100px;
+	background: #b6aad0;
+	outline: none;
+	border:none;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 100px 7px 0 7px;
+	transition: 0.3s;
+	}
+
+	.button button a{
+	font-size: 60px;
+	font-family: 'Permanent Marker', cursive;
+	text-decoration: none;
+	color: #181818;
+	}
+	/*home page slider */
+	/*slider */
+	#sec2 h1{
+		font-size: 90px;
+	}
+	#sec2 p{
+	position: absolute;
+	top:19%;
+	
+	z-index: 10;
+	font-family: 'Caveat', cursive;
+	font-size: 40px;
+	
+	}
+	.sliderContainer{
+	 width: 800px;
+	 margin: auto;
+	 border: 5px solid #000;
+	 overflow: hidden;
+	 position: relative;
+	 border-radius: 10px;
+	 
+	}
+	.sliderImage{
+	display: flex;
+	width: 800px;
+	height: 500px;
+	}
+	#nextBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	right: 5%;
+	font-size: 80px;
+	color: #ff4d73;
+	opacity: .7;
+	cursor: pointer;
+	}
+	#prevBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	right: 5%;
+	font-size: 80px;
+	color: #ff4d73;
+	opacity: .7;
+	cursor: pointer;
+	}
+	/*description */
+	#secE{
+	display: flex;
+	flex-direction: column;
+	height: 130vh;
+	}
+	.text-Expolorer h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 90px;
+	margin-left: 20px;
+	margin-bottom: 150px;
+	text-align: center;
+	}
+	.text-Expolorer p{
+	margin-left: 20px;
+	text-align: justify;
+	font-family: 'Caveat', cursive;
+	font-size: 60px;
+    margin-bottom: 100px;
+	}
+
+	.imageExplorer img{
+	box-shadow: 15px 30px 0 0 #be93d4;
+	border-radius: 10px;
+	border:5px solid #181818 ;
+	height: 400px;
+	width: 400px;
+	}
+	.text-Expolorer span{
+	border-bottom: 1px solid black;
+	font-family: 'Caveat', cursive;
+	}
+	/*services */
+	.containerService .Servicesline{
+	display: flex;
+	flex-direction: column;
+	}
+	.containerService .titleservice h1{
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	font-size: 90px;
+	margin-bottom: 45px;
+	}
+	.containerService .Servicesline .service1,
+	.containerService .Servicesline .service2,
+	.containerService .Servicesline .service3{
+	height: 300px;
+	width: 90%;
+	background: #181818;
+	margin: 0 30px 0 40px;
+	border: 5px solid #fff;
+	border-radius: 10px;
+	box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+	margin-bottom: 45px;
+	}
+	.containerService .Servicesline .service1 .textinfoservice h2,
+	.containerService .Servicesline .service2 .textinfoservice h2,
+	.containerService .Servicesline .service3 .textinfoservice h2{
+	font-family: 'Permanent Marker', cursive;
+	color: #fff;
+	text-align: center;
+	margin-top: 10px;
+	letter-spacing: 1px;
+	font-size: 30px;
+
+	}
+	.containerService .Servicesline .service1 .productinfo a,
+	.containerService .Servicesline .service2 .productinfo a,
+	.containerService .Servicesline .service3 .productinfo a{
+	color: #222222;
+	text-decoration: none;
+	position: absolute;
+	margin: 30px 0  0 77px;
+	border-radius: 10px;
+	background: #fff;
+	padding: 20px 50px 20px 40px;
+	transition: .5s;
+	font-size: 20px;
+	margin: 15px 0 0 230px;
+	}
+	/*description us */
+	#sec4{
+		height: 120vh;
+	}
+	.APropos{
+		display: flex;
+		flex-direction: column;
+	}
+	.APropos .textAPropos h1{
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	font-size: 90px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	}
+	.APropos .textAPropos p{
+	margin-right: 70px;
+	text-align: center;
+	font-family: 'Caveat', cursive;
+	font-size: 60px;
+	}
+
+	/*footer */
+	.boxcontact{
+	height: 80vh;
+	width: 100%;
+	
+	float: right;
+	margin-top: 17vh;
+	margin-left: 00vh;
+    }
+	.instagram .reseau ,
+	.Twitterr .reseau ,
+	.E-mail .reseau {
+	text-decoration: none;
+	padding: 30px;
+	background: #222222;
+	border-radius: 20px;
+	color: #fff;
+	transition: .5s;
+	}
+	.instagram .reseau:hover ,
+	.Twitterr .reseau:hover ,
+	.E-mail .reseau:hover{
+	background: #ff4d73;
+	} 
+	.boxcontact .instagram{
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 0vh;
+	}
+	.boxcontact .Twitterr{
+	display: flex;
+	align-items: center;
+	margin: 10vh 0 0 0vh;
+	
+	}
+	.boxcontact .E-mail{
+	display: flex;
+	align-items: center;
+	margin: 10vh 0 0 0vh;
+	
+	}
+	.instagram .reseau ,
+	.Twitterr .reseau ,
+	.E-mail .reseau {
+		font-size: 40px;
+	text-decoration: none;
+	padding: 50px 30px;
+	background: #222222;
+	border-radius: 20px;
+	color: #fff;
+	transition: .5s;
+
+	}
+	.allrights{
+		font-size: 20px;
+	height: 5vh;
+	background: #222222; 
+	width: 100%;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-bottom: 0;
+	}
+}
+
+
+	

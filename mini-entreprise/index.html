@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title></title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome1"/>
+	<meta charset="utf-8"/>
+	<meta name="description" content="SEKKEI est une mini entreprise du lycée Jules Ferry à Coulommiers ! On s'occupe de la customisation de vêtements..." />
+	<meta name="keywords" content="Customisation, vêtement, SEKKEI"/>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<script type="text/javascript" src="slider.js"></script>
+
+</head>
+<body onload="zmienslid()"> 
+
+		<ul class="nav">
+			<li><a href="#sec1">Accueil</a></li>
+			<li><a href="#sec2">Explorer</a></li>
+			<li><a href="#sec3">Services</a></li>
+			<li><a href="#sec4">A Propos</a></li>
+			<li><a href="#sec6">Contact</a></li>	
+		</ul>
+	
+	<section id="sec1" class="sec1" data-text="Accueil">
+		
+		<div class="text-info">
+			<h1>SEKKEI, Customisation Et Vente De Vêtement Personalisé </h1>
+			<p>SEKKEI est une mini-entreprise du lycée de Jules Ferry à Coulommiers. </p>
+			<div class="button">
+			<button onclick="window.location.href='#sec2'" class="btn"><a href="#sec2">Explorer</a></button>
+			<button onclick="window.location.href='#sec6'"  class="btn1"><a href="#sec6">contacter</a></button>
+			</div>
+			
+		</div>
+		<div class="logo">
+			<div id="slider"></div>
+		</div>
+	</section>
+	<section id="sec2" data-text="Explorer">
+		<h1>Nos designs</h1>
+		<p>*vous pouvez appuyer sur une fleche pour passer à l'image suivante</p>
+		<div class="sliderContainer">
+			<i class="fa fa-arrow-left" aria-hidden="true" id="prevBtn"></i>
+			<i class="fa fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
+			<div class="sliderImage">
+				<img src="img/sliders/016.png" id="lastClone">
+				<img src="img/sliders/01.png">
+				<img src="img/sliders/02.png">
+				<img src="img/sliders/03.png">
+				<img src="img/sliders/04.png">
+				<img src="img/sliders/05.png">
+				<img src="img/sliders/06.png">
+				<img src="img/sliders/07.png">
+				<img src="img/sliders/08.png">
+				<img src="img/sliders/09.png">
+				<img src="img/sliders/010.png">
+				<img src="img/sliders/011.png">
+				<img src="img/sliders/012.png">
+				<img src="img/sliders/013.png">
+				<img src="img/sliders/014.png">
+				<img src="img/sliders/015.png">
+				<img src="img/sliders/016.png">
+				<img src="img/sliders/01.png" id="firstClone">
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="slider2.js"></script>
+	</section>
+	<section id="secE">
+		<div class="text-Expolorer">
+			<h1>Que pouvez vous trouver chez nous?</h1>
+			<p>Sur notre Site vous pouvez trouver plein de designs fait sur place! <br>Vous pouvez également nous envoyer votre propre design si vous le souhaiter. <br>Notre customisation consiste au transfert de dessins fait par nous même<br> ou vos propre images et photos <span>libre de droits</span></p>
+		</div>
+		<div class="imageExplorer">
+			<img src="img/Sans titre1.png">
+		</div>
+	</section>
+	<section id="sec3" data-text="Services">
+		<div class="containerService">
+			<div class="titleservice">
+				<h1>Nos Services</h1>
+			</div>
+			<div class="Servicesline">
+				<div class="service1">
+					<div class="icon">
+						<i class="fa fa-paint-brush" aria-hidden="true"></i>
+					</div>
+					<div class="textinfoservice">
+						
+						<h2>Vêtement customisé à partir d'un design</h2>
+					</div>
+					<div class="productinfo">
+						<a href="contacter.php">Contacter Nous</a>
+					</div>
+				</div>
+				<div class="service2">
+					<div class="icon">
+						<i class="fa fa-upload" aria-hidden="true"></i>
+					</div>
+					<div class="textinfoservice">
+						<h2>Customisation à partir de votre propre design</h2>
+					</div>
+					<div class="productinfo">
+						<a href="contacter.php">Contacter Nous</a>
+					</div>
+				</div>
+				<div class="service3">
+					<div class="icon">
+						<i class="fa fa-info-circle" aria-hidden="true"></i>
+					</div>
+					<div class="textinfoservice">
+						<h2>Service particulier? Contacter Nous! </h2>
+					</div>
+					<div class="productinfo">
+						<a href="contacter.php">Contacter Nous</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="sec4" data-text="A Propos">
+		<div class="APropos">
+			<div class="ImgApropos">
+				<img src="img/lunePNG.png">
+			</div>
+			<div class="textAPropos">
+				<h1>Qui somme nous?</h1>
+				<p>Salut, nous sommes les élèves de la mini-entreprise SEKKEI. <br> Nous faisons partie d'un programme consistant à découvrir la vie en entreprise.<br> On a choisit comme projet la customisation de t-shirts.<br> 20% de nos revenus seront reversé à l'assossiation CIE qui forme des chiens à être guide d'aveugle. <br></p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="sec6" data-text="Contact">
+		<div class="contentFooter">
+			<div class="boxcontact">
+				<div class="instagram">
+					<a href="https://instagram.com/sekkei.official?igshid=1ntkhkduhnvd9" class="reseau"><h2>Suivez Nous Sur Instagram</h2></a>
+					<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
+				<div class="Twitterr">
+					<a href="" class="reseau"><h2>Suivez Nous Sur Twitter</h2></a>
+					<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</div>
+				<div class="E-mail">
+					<a href="contacter.php" class="reseau"><h2>Contacter Nous!</h2></a>
+					<a href="contacter.php"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+				</div>
+				</div>
+			</div>
+			<div class="allrights">
+				<div>
+					<p>&copy; SEKKEI 2021, </p>
+				</div>
+				<div>
+					<p> Tout droit réservé.</p>
+				</div>
+			</div>
+		
+		
+	</section>
+</body>
+</html>
+
